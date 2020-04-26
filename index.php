@@ -1,6 +1,7 @@
 <?php
 
 abstract class Customer
+// abstract can be a base class, as it cannot be instantiated, but we can create subclasses from it
 {
     private $id = 1; // prop can be accessed outside the class
     private $name; // can be accessed only inside the class
