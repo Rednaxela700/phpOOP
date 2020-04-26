@@ -5,7 +5,12 @@ class Customer{
     public $email; //can't be accessed outside, but can be accessed inside another class
     public $balance;
 
-     public function getCustomer($id) {
+    public function __construct()
+    {
+        echo 'The Constructor Run';
+    }
+
+    public function getCustomer($id) {
          $this->id = $id;
          return 'John Doe';
      }
@@ -13,4 +18,4 @@ class Customer{
 //instantiate a class
 $customer = new Customer;
 
-echo $customer->getCustomer(1);
+//echo $customer->getCustomer(1);
