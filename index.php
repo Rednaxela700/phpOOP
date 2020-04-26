@@ -1,6 +1,6 @@
 <?php
 
-class Customer
+abstract class Customer
 {
     private $id = 1; // prop can be accessed outside the class
     private $name; // can be accessed only inside the class
@@ -34,7 +34,7 @@ class  Subscriber extends Customer{
 }
 
 //instantiate a class
-$customer = new Customer(1,'John Doe', 'hello@as.de', 1300);
+//$customer = new Customer(1,'John Doe', 'hello@as.de', 1300);
 $subscriber = new Subscriber(2,'Jane Doe', 'hello@fem.ai', 5000, 'user');
 
 //echo $customer->getEmail();
