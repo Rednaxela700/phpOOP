@@ -14,8 +14,13 @@ class Customer{
          $this->id = $id;
          return 'John Doe';
      }
+
+     public function __destruct()
+     {
+         echo 'The Destructor Run';
+     }
 }
 //instantiate a class
 $customer = new Customer;
 
-//echo $customer->getCustomer(1);
+echo $customer->getCustomer(1);
