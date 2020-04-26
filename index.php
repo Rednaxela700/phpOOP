@@ -16,9 +16,14 @@ class Customer
 //        echo 'The Constructor Run';
     }
 
+    public  function getEmail() {
+        return $this->email;
+    }
+
 }
 
 //instantiate a class
 $customer = new Customer(1,'John Doe', 'hello@as.de', 1300);
 
 echo $customer->name;
+echo $customer->getEmail();
